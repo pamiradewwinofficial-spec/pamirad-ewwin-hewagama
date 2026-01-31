@@ -1,4 +1,6 @@
+/* ============================= */
 /* Custom 3D and Animation Styles */
+/* ============================= */
 .perspective-1000 {
     perspective: 1000px;
 }
@@ -17,7 +19,9 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+/* ============================= */
 /* Custom Animations */
+/* ============================= */
 @keyframes float-slow {
     0%, 100% { transform: translateY(0) rotate(45deg); }
     50% { transform: translateY(-20px) rotate(50deg); }
@@ -56,7 +60,9 @@
     animation: float-fast 3s ease-in-out infinite;
 }
 
+/* ============================= */
 /* Scroll Reveal Animation */
+/* ============================= */
 .reveal-on-scroll {
     opacity: 0;
     transform: translateY(30px);
@@ -68,7 +74,9 @@
     transform: translateY(0);
 }
 
+/* ============================= */
 /* 3D Tilt Card Effect */
+/* ============================= */
 .tilt-card {
     transform-style: preserve-3d;
     transition: transform 0.1s ease-out;
@@ -78,7 +86,39 @@
     transform: translateZ(20px);
 }
 
+/* ============================= */
+/* Profile Circle Glow */
+/* ============================= */
+.profile-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    animation: glow 3s infinite alternate;
+    box-shadow: 0 0 25px rgba(255, 122, 24, 0.6);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #111;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 15px rgba(255, 122, 24, 0.4); }
+    to { box-shadow: 0 0 35px rgba(255, 122, 24, 0.9); }
+}
+
+/* ============================= */
 /* Custom Scrollbar */
+/* ============================= */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -96,20 +136,26 @@
     background: #FF4500;
 }
 
+/* ============================= */
 /* Selection Color */
+/* ============================= */
 ::selection {
     background: rgba(255, 107, 53, 0.3);
     color: white;
 }
 
+/* ============================= */
 /* Neon Text Glow */
+/* ============================= */
 .text-glow {
     text-shadow: 0 0 10px rgba(255, 107, 53, 0.5),
                  0 0 20px rgba(255, 107, 53, 0.3),
                  0 0 30px rgba(255, 107, 53, 0.1);
 }
 
+/* ============================= */
 /* Particle Canvas */
+/* ============================= */
 #particles-container {
     position: absolute;
     width: 100%;
@@ -132,19 +178,17 @@
         transform: translateY(100vh) translateX(0);
         opacity: 0;
     }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
     100% {
         transform: translateY(-100vh) translateX(100px);
         opacity: 0;
     }
 }
 
+/* ============================= */
 /* Lightbox Transitions */
+/* ============================= */
 #lightbox.active {
     opacity: 1;
     pointer-events: all;
@@ -154,7 +198,9 @@
     transform: scale(1);
 }
 
+/* ============================= */
 /* Mobile Menu Animation */
+/* ============================= */
 .mobile-menu-enter {
     transform: translateX(100%);
     transition: transform 0.3s ease-out;
@@ -164,13 +210,16 @@
     transform: translateX(0);
 }
 
+/* ============================= */
 /* Responsive Typography */
+/* ============================= */
 @media (max-width: 768px) {
     .font-display {
         letter-spacing: -0.02em;
     }
 }
 
+/* ============================= */
 /* Hover Lift Effect */
 .hover-lift {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -181,6 +230,7 @@
     box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
 }
 
+/* ============================= */
 /* Grid Pattern Background */
 .grid-pattern {
     background-image: linear-gradient(rgba(255, 107, 53, 0.05) 1px, transparent 1px),
@@ -188,6 +238,7 @@
     background-size: 50px 50px;
 }
 
+/* ============================= */
 /* Button Shine Effect */
 .btn-shine {
     position: relative;
