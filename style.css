@@ -102,6 +102,13 @@
     animation: glow 3s infinite alternate;
     box-shadow: 0 0 25px rgba(255, 122, 24, 0.6);
 }
+.profile-pic {
+  width: 150px; /* Adjust size to match your design */
+  height: 150px;
+  border-radius: 50%; /* This makes it a circle */
+  object-fit: cover; /* Prevents the photo from stretching */
+  border: 2px solid #FF8C00; /* Optional: adds that orange glow/border */
+}
 
 .profile-circle img {
     width: 100%;
@@ -265,3 +272,4 @@
 .btn-shine:hover::after {
     transform: rotate(30deg) translateX(100%);
 }
+
