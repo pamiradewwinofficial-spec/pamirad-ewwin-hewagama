@@ -117,12 +117,22 @@
     object-fit: cover;
     background-color: #111;
 }
-.profile-img {
+.circle-container {
+    width: 150px; /* Or whatever size your circle is */
+    height: 150px;
+    border: 2px solid #ff8c00; /* This creates the orange ring */
+    border-radius: 50%;
+    overflow: hidden; /* This crops the photo into a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
     width: 100%;
     height: 100%;
-    border-radius: 50%; /* Makes the image a circle */
-    object-fit: cover;  /* Ensures your face isn't stretched */
-    display: block;
+    object-fit: cover; /* This stops the photo from stretching */
+}
 }
 @keyframes glow {
     from { box-shadow: 0 0 15px rgba(255, 122, 24, 0.4); }
@@ -278,5 +288,6 @@
 .btn-shine:hover::after {
     transform: rotate(30deg) translateX(100%);
 }
+
 
 
