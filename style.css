@@ -117,7 +117,13 @@
     object-fit: cover;
     background-color: #111;
 }
-
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover;  /* Ensures your face isn't stretched */
+    display: block;
+}
 @keyframes glow {
     from { box-shadow: 0 0 15px rgba(255, 122, 24, 0.4); }
     to { box-shadow: 0 0 35px rgba(255, 122, 24, 0.9); }
@@ -272,4 +278,5 @@
 .btn-shine:hover::after {
     transform: rotate(30deg) translateX(100%);
 }
+
 
